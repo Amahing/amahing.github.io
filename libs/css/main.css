@@ -1,0 +1,90 @@
+@import url("./reset.css");
+@import url("./normalize.css");
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant/Cormorant-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant/Cormorant-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/OpenSans/OpenSans-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --color-white: #FFF;
+  --color-black: #151618;
+  --color-brown: #754E29;
+  --color-light-background: #F7F2EA;
+  --color-light-green: #B8B58B;
+
+  
+
+  --transition-duration: 0.25s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+  padding: 30px 0;
+}
+
+.logo {
+  margin-bottom: 35px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 65px;
+
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;  
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.user-actios__item-search {
+  margin-left: 80px;
+}
